@@ -71,4 +71,4 @@ client.connect(err => {
 });
 
 
-app.listen(process.env.PORT || port, console.log('port  7000'))
+app.listen(process.env.PORT || port)
