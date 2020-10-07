@@ -31,7 +31,7 @@ client.connect(err => {
     })
     app.get('/userActivity', (req, res) => {
         const queryEmail = req.query.email;
-        collection.find({ userEmail: userEmail })
+        collection.find({ userEmail: queryEmail })
             .toArray((err, documents) => {
                 res.send(documents);
             })
